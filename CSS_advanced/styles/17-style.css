@@ -78,10 +78,12 @@ a:active {
 }
 .section-header {
     text-align: var(--section-header-align);
+
 }
 
 .section-body{
     padding: var(--section-body-padding);
+    padding: var(--section-header-padding);
 }
 
 .section-footer {
