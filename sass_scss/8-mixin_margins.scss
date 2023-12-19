@@ -1,10 +1,15 @@
 // 8-mixin_margins.scss
 
-body {
-    margin-left: 10px;
-    margin-right: 10px; }
+@mixin setMargins($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+  }
+  
+  body {
+    @include setMargins(10px, 10px);
+  }
   
   div {
-    margin-left: 15px;
-    margin-right: 15px; }
-    
+    @include setMargins(15px, 15px);
+  }
+  
